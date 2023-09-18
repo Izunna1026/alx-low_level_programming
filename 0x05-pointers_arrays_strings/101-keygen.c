@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Function to generate a random character from 'a' to 'z'
+// Function to generate aracter from 'a' to 'z'
 char getRandomCharacter() {
     return 'a' + rand() % 26;
 }
