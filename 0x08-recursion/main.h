@@ -9,4 +9,6 @@ int _putchar(char c);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int actual_sqrt_recursion(int n, int i);
+int is_prime_number(int n);
+int prime(int n, int i);
 #endif /* MAIN_H*/
