@@ -18,12 +18,15 @@ int word_len(char *str)
 }
 /**
  * count_word - help fnction to count
- * @s: string to evaluate
+ * @str: string to evaluate
  * Return: to return no of words
  */
 int count_word(char *str)
 {
 	int index = 0, words = 0, len = 0;
+
+	for (index = 0; *(str + index); index++)
+		len++;
 
 	for (index = 0; index < len; index++)
 	{
