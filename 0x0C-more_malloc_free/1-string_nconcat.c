@@ -1,4 +1,6 @@
 #include "main.h"
+#include <string.h>
+#include <stdlib.h>
 /**
  *string_nconcat - to concat
  *@s1: the first variable
@@ -8,8 +10,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len1 = 0;
-	int len2 = 0;
+	unsigned int len1 = 0;
+	unsigned int len2 = 0;
 	char *result;
 	unsigned int i;
 
@@ -23,7 +25,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len2++;
 	result = malloc(sizeof(char) * (len1 + n) + 1);
 	if (result == NULL)
-		return(NULL);
+		return (NULL);
 	if (n >= len2)
 	{
 		for (i = 0; s1[i] != '\0'; i++)
@@ -34,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		for (i = 0; si[1] != '\0'; i++)
+		for (i = 0; s1[1] != '\0'; i++)
 			result[i] = s1[i];
 		for (i = 0; i < n; i++)
 			result[len1 + i] = s2[i];
