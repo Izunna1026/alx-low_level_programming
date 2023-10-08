@@ -3,10 +3,9 @@
 #include "main.h"
 
 /**
- * is_digit - checks if a string contains a non-digit char
- * @s: string to be evaluated
- *
- * Return: 0 if a non-digit is found, 1 otherwise
+ * is_digit - function of digit
+ * @s: the string variable
+ * Return: to return mul
  */
 int is_digit(char *s)
 {
@@ -22,10 +21,9 @@ int is_digit(char *s)
 }
 
 /**
- * _strlen - returns the length of a string
- * @s: string to evaluate
- *
- * Return: the length of the string
+ * _strlen - define the dtring length
+ * @s: the string valuable
+ * Return: to return length
  */
 int _strlen(char *s)
 {
@@ -39,7 +37,7 @@ int _strlen(char *s)
 }
 
 /**
- * errors - handles errors for main
+ * errors - to print error
  */
 void errors(void)
 {
@@ -48,7 +46,7 @@ void errors(void)
 }
 
 /**
- * main - multiplies two positive numbers
+ * main - the main function
  * @argc: number of arguments
  * @argv: array of arguments
  *
