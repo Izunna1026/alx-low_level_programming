@@ -1,7 +1,9 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * print_list - to print list of variables
  * @h: the head
+ *
  * Return: to return the elements
  */
 size_t print_list(const list_t *h)
