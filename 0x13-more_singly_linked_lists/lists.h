@@ -19,7 +19,7 @@ typedef struct listint_s
 } listint_t;
 
 /**
- * struct listint_u - singly linked list
+ * struct listin_s - singly linked list
  * @t: integar
  * @next: points to the next node
  * Description: singly linked list nod structure
