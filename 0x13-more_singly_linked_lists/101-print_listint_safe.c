@@ -4,9 +4,9 @@
  * @head: the first node
  * Return: to return 0
  */
-void listed(listint_t **head)
+void listed(listint_k **head)
 {
-	listint_t *new, *newnode;
+	listint_k *new, *newnode;
 
 	if (head != NULL)
 	{
@@ -27,7 +27,7 @@ void listed(listint_t **head)
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t elem;
-	listint_t *newnode, *h, *k;
+	listint_k *newnode, *h, *k;
 
 	h = NULL;
 
