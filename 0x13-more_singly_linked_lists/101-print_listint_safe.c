@@ -4,9 +4,10 @@
  * @head: the first node
  * Return: to return 0
  */
-void listed(listint_k **head)
+void listed(listin_t **head)
 {
-	listint_k *new, *newnode;
+	listin_t *new;
+	listin_t *newnode;
 
 	if (head != NULL)
 	{
@@ -27,13 +28,13 @@ void listed(listint_k **head)
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t elem = 0;
-	listint_k *newnode, *h, *k;
+	listin_t *newnode, *h, *k;
 
 	h = NULL;
 
 	while (head != NULL)
 	{
-		newnode = malloc(sizeof(listint_k));
+		newnode = malloc(sizeof(listin_t));
 		if (newnode == NULL)
 			exit(98);
 		newnode->t = (void *)head;
@@ -46,7 +47,7 @@ size_t print_listint_safe(const listint_t *head)
 			k = k->next;
 			if (head == k->t)
 			{
-				printf("->[%p] %d\n", (void *)head, head->n);
+				printf("-> [%p] %d\n", (void *)head, head->n);
 				listed(&h);
 				return (elem);
 			}
