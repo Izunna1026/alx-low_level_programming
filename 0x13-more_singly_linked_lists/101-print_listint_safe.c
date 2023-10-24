@@ -26,14 +26,14 @@ void listed(listint_k **head)
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t elem;
+	size_t elem = 0;
 	listint_k *newnode, *h, *k;
 
 	h = NULL;
 
 	while (head != NULL)
 	{
-		newnode = malloc(sizeof(listint_t));
+		newnode = malloc(sizeof(listint_k));
 		if (newnode == NULL)
 			exit(98);
 		newnode->t = (void *)head;
