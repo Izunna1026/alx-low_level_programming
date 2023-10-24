@@ -9,7 +9,7 @@
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
- * @p: void
+ * @t: void
  * Description: singly linked list node structure
  *
  */
