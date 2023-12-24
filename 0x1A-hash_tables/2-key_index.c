@@ -4,6 +4,7 @@
  * @key: this is the key to get the index 
  * size: variable of the array size of the hash table
  * Return: to return the index
+ * Description: to use the djb2 algorithm
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
