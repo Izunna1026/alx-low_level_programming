@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 /**
  * key_index - to get an index at instant of key
- * @key: this is the key to get the index 
+ * @key: this is the key to get the index
  * size: variable of the array size of the hash table
  * Return: to return the index
  * Description: to use the djb2 algorithm
